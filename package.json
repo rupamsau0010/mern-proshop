@@ -1,0 +1,23 @@
+{
+  "name": "mern-preshop",
+  "version": "1.0.0",
+  "description": "MERN Shopping App demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupamsau0010/mern-proshop.git"
+  },
+  "author": "Rupam Sau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupamsau0010/mern-proshop/issues"
+  },
+  "homepage": "https://github.com/rupamsau0010/mern-proshop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
