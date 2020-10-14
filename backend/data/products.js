@@ -1,6 +1,5 @@
 const products = [
     {
-        _id: "1",
         name: "Something I dont Khow",
         image: "/images/airpods.jpg",
         description:
@@ -13,7 +12,6 @@ const products = [
         numReviews: 4
     },
     {
-        _id: "2",
         name: "Something I dont Khow",
         image: "/images/airpods.jpg",
         description:
@@ -25,7 +23,6 @@ const products = [
         rating: 4.5,
         numReviews: 4
     },{
-        _id: "3",
         name: "Something I dont Khow",
         image: "/images/airpods.jpg",
         description:
@@ -37,7 +34,6 @@ const products = [
         rating: 4.5,
         numReviews: 4
     },{
-        _id: "4",
         name: "Something I dont Khow",
         image: "/images/airpods.jpg",
         description:
@@ -49,7 +45,6 @@ const products = [
         rating: 4.5,
         numReviews: 4
     },{
-        _id: "5",
         name: "Something I dont Khow",
         image: "/images/airpods.jpg",
         description:
@@ -61,7 +56,6 @@ const products = [
         rating: 4.5,
         numReviews: 4
     },{
-        _id: "6",
         name: "Something I dont Khow",
         image: "/images/airpods.jpg",
         description:
