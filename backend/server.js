@@ -1,5 +1,8 @@
+require("dotenv").config();
+
 const express = require("express");
 const products = require("./data/products");
+const cors = require("cors");
 
 const app = express();
 
@@ -16,6 +19,8 @@ app.get("/api/products/:id", (req, res) => {
     res.json(product);
 });
 
-app.listen(5000, function(){
-    console.log("Server is running on port 5000");
+app.use(cors());
+
+app.listen(process.env.PORT || 5000, function(){
+    console.log("Server is running on port 5000 or "+ process.env.PORT);
 });
