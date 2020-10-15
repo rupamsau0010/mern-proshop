@@ -1,8 +1,9 @@
 require("dotenv").config();
 
 const express = require("express");
-const products = require("./data/products");
 const connectDB = require("./config/db");
+const productRoutes = require("./routes/productRoutes");
+const { notFound, errorHandler } = require("./middlewares/errorMiddleware");
 const cors = require("cors");
 const color = require("colors");
 
@@ -15,14 +16,11 @@ app.get("/", (req, res) =>{
     res.send("API is running.")
 });
 
-app.get("/api/products", (req, res) => {
-    res.json(products);
-});
+app.use("/api/products", productRoutes);
 
-app.get("/api/products/:id", (req, res) => {
-    const product = products.find((p) => p._id === req.params.id)
-    res.json(product);
-});
+app.use(notFound);
+
+app.use(errorHandler);
 
 app.use(cors());
 
