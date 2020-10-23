@@ -5,7 +5,8 @@ const Product = require("../models/productModel");
 
 router.get("/", asyncHandler(async(req, res) => {
     const products = await Product.find({});
-
+    // throw new Error("Trial Error...");
+    // res.status(401).send("Error occured");
     res.json(products);
 }));
 
