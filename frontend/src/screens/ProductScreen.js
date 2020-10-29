@@ -9,7 +9,7 @@ import {
   ListGroupItem,
   Card,
   Button,
-  Form
+  Form,
 } from "react-bootstrap";
 
 import Rating from "../components/Rating";
@@ -19,7 +19,7 @@ import Loader from "../components/Loader";
 import { listProductDetails } from "../actions/productActions";
 
 function ProductScreen({ history, match }) {
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
 
   const dispatch = useDispatch();
 
@@ -31,8 +31,8 @@ function ProductScreen({ history, match }) {
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`)
-  }
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+  };
   return (
     <>
       <Link to="/" className="btn btn-light my-3">
@@ -106,7 +106,7 @@ function ProductScreen({ history, match }) {
 
                 <ListGroupItem>
                   <Button
-                    onClick={ addToCartHandler }
+                    onClick={addToCartHandler}
                     className="btn-block"
                     type="button"
                     disabled={product.countInStock === 0}
