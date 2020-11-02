@@ -29,7 +29,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.6"
   },
   "devDependencies": {
     "concurrently": "^5.3.0"
