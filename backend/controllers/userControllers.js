@@ -37,7 +37,7 @@ const registerUser = asyncHandler(async(req, res) => {
             password
         })
         if (user) {
-            res.status(400).json({
+            res.status(201).json({
                 _id: user._id,
                 name: user.name,
                 email: user.email,
